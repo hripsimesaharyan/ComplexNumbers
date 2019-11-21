@@ -15,9 +15,12 @@ namespace ComplexNumbers
             Console.WriteLine("Enter imaginary part of complex number");
             var imaginary = double.Parse(Console.ReadLine());
             Comlexnumber newcomplex = new Comlexnumber(real, imaginary);
-
+            
             Console.WriteLine("newcomplex:  {0}", newcomplex);
 
+           
+            double phase = newcomplex.Phase;
+            Console.WriteLine("newcomplex-phase:  {0}", phase);
             Comlexnumber val1 = new Comlexnumber(1, 1);
             Comlexnumber val2 = new Comlexnumber(2, 6);
 
